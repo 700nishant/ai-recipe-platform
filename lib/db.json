@@ -1,0 +1,801 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Truffle & Forest Mushroom Risotto",
+      "description": "A creamy, decadent Arborio rice dish infused with aromatic forest mushrooms, white wine, and finished with luxurious black truffle oil and freshly grated Parmesan cheese.",
+      "image": "https://images.unsplash.com/photo-1476124369491-e7addf5db371?q=80&w=600&auto=format&fit=crop",
+      "difficulty": "Medium",
+      "prepTime": 15,
+      "cookTime": 30,
+      "servings": 2,
+      "category": "Dinner",
+      "tags": [
+        "Vegetarian",
+        "Gluten-Free"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 12,
+        "carbs": 64,
+        "fat": 18
+      },
+      "ingredients": [
+        {
+          "name": "Arborio Rice",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "name": "Mixed Forest Mushrooms",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "name": "Shallot, finely diced",
+          "amount": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "Garlic, minced",
+          "amount": 2,
+          "unit": "cloves"
+        },
+        {
+          "name": "Dry White Wine",
+          "amount": 100,
+          "unit": "ml"
+        },
+        {
+          "name": "Warm Vegetable Broth",
+          "amount": 600,
+          "unit": "ml"
+        },
+        {
+          "name": "Parmesan Cheese, grated",
+          "amount": 40,
+          "unit": "g"
+        },
+        {
+          "name": "Butter",
+          "amount": 20,
+          "unit": "g"
+        },
+        {
+          "name": "Truffle Oil",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "Fresh Thyme",
+          "amount": 2,
+          "unit": "sprigs"
+        }
+      ],
+      "instructions": [
+        "Sauté shallots and garlic in butter in a large pan until soft and fragrant.",
+        "Add mushrooms and thyme, cooking until mushrooms release their moisture and brown.",
+        "Stir in the Arborio rice, toasting the grains for 2 minutes until translucent at the edges.",
+        "Pour in the white wine and simmer, stirring constantly, until it is completely absorbed.",
+        "Begin adding the warm broth one ladle at a time, stirring continuously.",
+        "Once rice is al dente, stir in the Parmesan cheese, cover and let rest for 2 minutes.",
+        "Drizzle with truffle oil and serve immediately."
+      ],
+      "rating": 4.9,
+      "reviews": [
+        {
+          "user": "Chef Sarah",
+          "rating": 5,
+          "comment": "Absolutely restaurant-quality!",
+          "date": "2026-05-12"
+        }
+      ],
+      "isUserCreated": false
+    },
+    {
+      "id": "2",
+      "title": "Creamy Paneer Butter Masala",
+      "description": "A popular, rich and creamy North Indian curry made with soft paneer cubes cooked in a velvety tomato-butter gravy spiced with sweet aromatics.",
+      "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?q=80&w=600&auto=format&fit=crop",
+      "difficulty": "Easy",
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 4,
+      "category": "Dinner",
+      "tags": [
+        "Vegetarian",
+        "Gluten-Free"
+      ],
+      "nutrition": {
+        "calories": 390,
+        "protein": 14,
+        "carbs": 18,
+        "fat": 32
+      },
+      "ingredients": [
+        {
+          "name": "Paneer cubes",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "name": "Butter",
+          "amount": 30,
+          "unit": "g"
+        },
+        {
+          "name": "Onion, finely chopped",
+          "amount": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "Ginger-Garlic Paste",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "Tomato Puree",
+          "amount": 1.5,
+          "unit": "cups"
+        },
+        {
+          "name": "Cashews (soaked in warm water)",
+          "amount": 10,
+          "unit": "pcs"
+        },
+        {
+          "name": "Garam Masala",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "Kashmiri Red Chili Powder",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "Fresh Cream",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "Kasuri Methi (dried fenugreek leaves)",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "Blend the soaked cashews with a little water into a smooth, creamy paste and set aside.",
+        "Melt half the butter in a pan, add chopped onions and sauté until translucent.",
+        "Stir in the ginger-garlic paste and cook for 1 minute until the raw aroma disappears.",
+        "Add tomato puree, Kashmiri red chili powder, and salt. Simmer for 8-10 minutes until oil separates.",
+        "Stir in the cashew paste and cook for 2 more minutes.",
+        "Add paneer cubes, garam masala, and 1/2 cup of warm water. Simmer on low heat for 5 minutes.",
+        "Finish by crushing kasuri methi between your palms into the curry, stir in fresh cream and the remaining butter. Garnish with coriander."
+      ],
+      "rating": 4.9,
+      "reviews": [
+        {
+          "user": "Rohan S.",
+          "rating": 5,
+          "comment": "Matches the taste of best Delhi dhabas! Easy to follow.",
+          "date": "2026-06-03"
+        }
+      ],
+      "isUserCreated": false
+    },
+    {
+      "id": "3",
+      "title": "Classic Chicken Tikka Masala",
+      "description": "Juicy pieces of chicken tikka grilled and simmered in an aromatic, vibrant tomato cream sauce with fragrant Indian spices.",
+      "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=600&auto=format&fit=crop",
+      "difficulty": "Medium",
+      "prepTime": 20,
+      "cookTime": 25,
+      "servings": 4,
+      "category": "Dinner",
+      "tags": [
+        "Gluten-Free",
+        "High-Protein"
+      ],
+      "nutrition": {
+        "calories": 440,
+        "protein": 32,
+        "carbs": 12,
+        "fat": 28
+      },
+      "ingredients": [
+        {
+          "name": "Chicken Breast, cubed",
+          "amount": 500,
+          "unit": "g"
+        },
+        {
+          "name": "Yogurt (for marinade)",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "Ginger-Garlic Paste",
+          "amount": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "name": "Garam Masala",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "name": "Kashmiri Red Chili Powder",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "name": "Lemon Juice",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "Tomato Puree",
+          "amount": 2,
+          "unit": "cups"
+        },
+        {
+          "name": "Heavy Cream",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "Butter",
+          "amount": 20,
+          "unit": "g"
+        },
+        {
+          "name": "Onion, finely chopped",
+          "amount": 1,
+          "unit": "pc"
+        }
+      ],
+      "instructions": [
+        "Marinate chicken cubes in yogurt, 1 tbsp ginger-garlic paste, 1 tsp garam masala, 1 tsp red chili, salt, and lemon juice for at least 20 minutes.",
+        "Sauté marinated chicken in a hot pan with butter for 6-8 minutes until slightly charred on the edges, then set aside.",
+        "In the same pan, cook chopped onions until soft. Add remaining ginger-garlic paste, garam masala, and chili powder.",
+        "Pour in tomato puree and simmer for 10 minutes until the sauce reduces and thickens.",
+        "Add the cooked chicken tikka pieces back into the gravy and simmer for 5 minutes.",
+        "Pour in heavy cream and stir well. Garnish with chopped fresh coriander leaves and serve warm with naan."
+      ],
+      "rating": 5,
+      "reviews": [
+        {
+          "user": "Aarav K.",
+          "rating": 5,
+          "comment": "A true crowd pleaser. Tastes incredibly authentic!",
+          "date": "2026-06-05"
+        }
+      ],
+      "isUserCreated": false
+    },
+    {
+      "id": "4",
+      "title": "Avocado Smash with Poached Eggs",
+      "description": "Rich sourdough toast topped with seasoned smashed avocado, perfectly poached eggs, feta crumbles, and sprinkled with Egyptian Dukkah spice blend.",
+      "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=600&auto=format&fit=crop",
+      "difficulty": "Easy",
+      "prepTime": 10,
+      "cookTime": 5,
+      "servings": 2,
+      "category": "Breakfast",
+      "tags": [
+        "Vegetarian",
+        "High-Protein"
+      ],
+      "nutrition": {
+        "calories": 390,
+        "protein": 16,
+        "carbs": 28,
+        "fat": 24
+      },
+      "ingredients": [
+        {
+          "name": "Ripe Avocados",
+          "amount": 2,
+          "unit": "pcs"
+        },
+        {
+          "name": "Sourdough Bread",
+          "amount": 2,
+          "unit": "slices"
+        },
+        {
+          "name": "Fresh Eggs",
+          "amount": 2,
+          "unit": "pcs"
+        },
+        {
+          "name": "Feta Cheese",
+          "amount": 30,
+          "unit": "g"
+        },
+        {
+          "name": "Lemon Juice",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "Dukkah Spice",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "Chili Flakes",
+          "amount": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "In a bowl, smash avocado with lemon juice, salt, pepper, and chili flakes until chunky-smooth.",
+        "Toast the sourdough bread slices until golden brown.",
+        "Poach the eggs in simmering water with a splash of vinegar for exactly 3 minutes.",
+        "Spread the smashed avocado generously over the toasted bread slices.",
+        "Carefully place a poached egg on top of each avocado toast.",
+        "Crumble feta cheese over the top, then garnish with Dukkah spice and microgreens."
+      ],
+      "rating": 4.7,
+      "reviews": [
+        {
+          "user": "Elena B.",
+          "rating": 5,
+          "comment": "A weekly breakfast staple.",
+          "date": "2026-05-20"
+        }
+      ],
+      "isUserCreated": false
+    },
+    {
+      "title": "Egg curry",
+      "description": "A chef-crafted, premium version of your requested dish: egg curry, refined for your None specifications.",
+      "difficulty": "Medium",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 4,
+      "category": "Lunch",
+      "tags": [
+        "Gourmet",
+        "Chef Selection"
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 18,
+        "carbs": 45,
+        "fat": 14
+      },
+      "ingredients": [
+        {
+          "name": "Main Ingredient",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "name": "Supporting Element",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "name": "Seasonings & Spices",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "Olive Oil",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "Salt & Pepper",
+          "amount": 1,
+          "unit": "pinch"
+        }
+      ],
+      "instructions": [
+        "Prep the core items needed for your egg curry.",
+        "Heat butter or olive oil in a suitable pan.",
+        "Toss in the main and supporting elements, searing until golden-brown.",
+        "Season thoroughly with fresh herbs and spices.",
+        "Garnish creatively and serve warm."
+      ],
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=600&auto=format&fit=crop",
+      "id": "gf9zdmh",
+      "rating": 0,
+      "reviews": [],
+      "isUserCreated": true
+    },
+    {
+      "title": "Authentic Spaghetti Carbonara",
+      "description": "A classic Roman pasta dish made with spaghetti, crispy guanciale, creamy egg yolks, freshly grated Pecorino Romano, and cracked black pepper.",
+      "difficulty": "Medium",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 2,
+      "category": "Dinner",
+      "tags": [
+        "Classic"
+      ],
+      "nutrition": {
+        "calories": 590,
+        "protein": 24,
+        "carbs": 70,
+        "fat": 26
+      },
+      "ingredients": [
+        {
+          "name": "Spaghetti Pasta",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "name": "Guanciale or Pancetta, cubed",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "name": "Fresh Egg Yolks",
+          "amount": 3,
+          "unit": "pcs"
+        },
+        {
+          "name": "Whole Fresh Egg",
+          "amount": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "Pecorino Romano Cheese, grated",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "name": "Freshly Cracked Black Pepper",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "Salt (for pasta water)",
+          "amount": 1.5,
+          "unit": "tbsp"
+        }
+      ],
+      "instructions": [
+        "Bring a large pot of water (about 3 liters) to a rolling boil. Add salt, then add spaghetti. Cook until 1 minute before al dente (check pasta packaging for time).",
+        "While pasta cooks, heat a large skillet over medium heat. Add guanciale cubes and cook for 5-7 minutes until the fat renders and guanciale becomes crispy and golden. Turn off heat.",
+        "In a medium bowl, whisk egg yolks and the whole egg together. Stir in grated Pecorino Romano and cracked black pepper until it forms a thick, creamy paste.",
+        "Reserve 1/2 cup of hot pasta cooking water, then drain the spaghetti.",
+        "Add the hot drained spaghetti directly to the skillet containing guanciale and rendered fat. Toss well for 1 minute off the heat to cool slightly (to avoid scrambling the eggs).",
+        "Pour the egg-cheese mixture over the pasta. Toss and stir rapidly. Add 2-3 tablespoons of the reserved pasta water to emulsify the cheese and grease into a smooth, glossy sauce.",
+        "Continue tossing off the heat until a thick, creamy sauce coats all spaghetti strands. Serve immediately topped with extra Pecorino and cracked pepper."
+      ],
+      "image": "https://images.unsplash.com/photo-1612874742237-6526221588e3?q=80&w=600&auto=format&fit=crop",
+      "id": "ddsgxaz",
+      "rating": 0,
+      "reviews": [],
+      "isUserCreated": true
+    },
+    {
+      "title": "Korean style maggie",
+      "description": "A detailed, beginner-friendly recipe for preparing a delicious korean style maggie, customized to a None diet.",
+      "difficulty": "Easy",
+      "prepTime": 15,
+      "cookTime": 20,
+      "servings": 2,
+      "category": "Dinner",
+      "tags": [
+        "Easy Cooking",
+        "Quick Meal"
+      ],
+      "nutrition": {
+        "calories": 380,
+        "protein": 16,
+        "carbs": 42,
+        "fat": 12
+      },
+      "ingredients": [
+        {
+          "name": "Main Ingredient (chopped)",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "name": "Supporting Element",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "name": "Onion",
+          "amount": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "Garlic",
+          "amount": 3,
+          "unit": "cloves"
+        },
+        {
+          "name": "Spices",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "Olive Oil or Butter",
+          "amount": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "name": "Salt and Black Pepper",
+          "amount": 1,
+          "unit": "pinch"
+        }
+      ],
+      "instructions": [
+        "Prepare all ingredients: finely chop onions, mince garlic, and slice main cooking ingredients into uniform, bite-sized pieces for even cooking.",
+        "Heat olive oil or butter in a medium-sized skillet over medium heat for 1 minute until shimmering.",
+        "Add chopped onions and minced garlic to the skillet. Sauté on medium-low heat for 3-4 minutes, stirring regularly, until fragrant and onions turn soft and translucent.",
+        "Increase heat slightly to medium. Add the main ingredients and sauté for 6-8 minutes, tossing frequently, until cooked through and lightly browned on the edges.",
+        "Sprinkle the spices, salt, and pepper evenly over the skillet contents. Stir thoroughly for 1 minute to release spice oils and coat the food.",
+        "Reduce heat to low, cover the pan, and simmer for 3 minutes to allow flavors to meld. Garnish with fresh herbs and serve immediately."
+      ],
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=600&auto=format&fit=crop",
+      "id": "pz14zrq",
+      "rating": 0,
+      "reviews": [],
+      "isUserCreated": true
+    },
+    {
+      "title": "Homestyle Butter Chicken (हिंदी अनुवाद)",
+      "description": "Tender pieces of marinated chicken grilled to smoky perfection and simmered in a rich, buttery, spiced tomato-cream gravy. [हिंदी रूपांतरण]",
+      "difficulty": "Medium",
+      "prepTime": 20,
+      "cookTime": 25,
+      "servings": 4,
+      "category": "Dinner",
+      "tags": [
+        "High-Protein",
+        "Gluten-Free"
+      ],
+      "nutrition": {
+        "calories": 440,
+        "protein": 32,
+        "carbs": 12,
+        "fat": 28
+      },
+      "ingredients": [
+        {
+          "name": "Chicken breasts, cubed (सामग्री)",
+          "amount": 500,
+          "unit": "ग्राम"
+        },
+        {
+          "name": "Yogurt (for marinade) (सामग्री)",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "Ginger-Garlic Paste (सामग्री)",
+          "amount": 1.5,
+          "unit": "चम्मच"
+        },
+        {
+          "name": "Garam Masala (सामग्री)",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "name": "Kashmiri Red Chili Powder (सामग्री)",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "name": "Lemon Juice (सामग्री)",
+          "amount": 1,
+          "unit": "चम्मच"
+        },
+        {
+          "name": "Tomato Puree (सामग्री)",
+          "amount": 2,
+          "unit": "cups"
+        },
+        {
+          "name": "Heavy Cream (सामग्री)",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "Butter (सामग्री)",
+          "amount": 25,
+          "unit": "ग्राम"
+        },
+        {
+          "name": "Salt (सामग्री)",
+          "amount": 1.25,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "1. In a bowl, combine chicken cubes with yogurt, 1 tbsp ginger-garlic paste, 1 tsp garam masala, 1 tsp Kashmiri red chili, salt, and lemon juice. Marinate for 20 minutes. (विधि)",
+        "2. Melt 10g of butter in a large skillet over high heat. Add the marinated chicken pieces and sear for 3-4 minutes on each side until cooked through and slightly charred on the edges. Remove chicken and set aside. (विधि)",
+        "3. In the same skillet, melt the remaining butter (15g). Sauté finely chopped onions for 5 minutes on medium heat until golden. (विधि)",
+        "4. Add the remaining ginger-garlic paste, garam masala, and red chili powder. Sauté for 1 minute until fragrant. (विधि)",
+        "5. Add tomato puree and salt. Reduce heat to medium-low and simmer for 10 minutes until the tomato gravy thickens and darkens in color. (विधि)",
+        "6. Stir in the grilled chicken tikka pieces. Simmer uncovered for 5 minutes to let the chicken absorb the curry flavor. (विधि)",
+        "7. Lower the heat to low, stir in heavy cream, and simmer for another 2 minutes. Garnish with chopped fresh coriander leaves and serve. (विधि)"
+      ],
+      "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=600&auto=format&fit=crop",
+      "id": "fkqxtiu",
+      "rating": 0,
+      "reviews": [],
+      "isUserCreated": true
+    },
+    {
+      "title": "Classic Italian Tiramisu",
+      "description": "An elegant, authentic Italian dessert layered with coffee-dipped ladyfingers, rich mascarpone cream, and dusted with fine cocoa powder.",
+      "difficulty": "Medium",
+      "prepTime": 20,
+      "cookTime": 10,
+      "servings": 6,
+      "category": "Dessert",
+      "tags": [
+        "Dessert",
+        "Classic",
+        "Italian"
+      ],
+      "nutrition": {
+        "calories": 380,
+        "protein": 6,
+        "carbs": 42,
+        "fat": 22
+      },
+      "ingredients": [
+        {
+          "name": "Mascarpone cheese",
+          "amount": 250,
+          "unit": "g",
+          "quantity": "250g"
+        },
+        {
+          "name": "Ladyfinger cookies (Savoiardi)",
+          "amount": 24,
+          "unit": "pcs",
+          "quantity": "24 cookies"
+        },
+        {
+          "name": "Strong brewed espresso, cooled",
+          "amount": 1,
+          "unit": "cup",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Heavy whipping cream",
+          "amount": 1,
+          "unit": "cup",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Granulated sugar",
+          "amount": 0.5,
+          "unit": "cup",
+          "quantity": "1/2 cup"
+        },
+        {
+          "name": "Unsweetened cocoa powder",
+          "amount": 2,
+          "unit": "tbsp",
+          "quantity": "2 tablespoons"
+        },
+        {
+          "name": "Vanilla extract",
+          "amount": 1,
+          "unit": "tsp",
+          "quantity": "1 teaspoon"
+        }
+      ],
+      "instructions": [
+        "In a large bowl, whisk the heavy cream, sugar, and vanilla extract together until stiff peaks form.",
+        "Gently fold the mascarpone cheese into the whipped cream until smooth and combined. Be careful not to overmix.",
+        "Quickly dip each ladyfinger cookie into the cooled espresso for 1-2 seconds (do not soak them) and arrange them in a single layer at the bottom of an 8x8 inch dish.",
+        "Spread half of the mascarpone cream mixture evenly over the ladyfinger layer.",
+        "Dip the remaining ladyfingers in espresso and place them in a second layer on top of the cream.",
+        "Spread the remaining mascarpone cream on top and smooth the surface with a spatula.",
+        "Dust the top generously with cocoa powder. Refrigerate for at least 4 hours (ideally overnight) before slicing and serving."
+      ],
+      "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=600&auto=format&fit=crop",
+      "id": "upveinx",
+      "rating": 0,
+      "reviews": [],
+      "isUserCreated": true
+    },
+    {
+      "title": "Homemade Margherita Pizza",
+      "description": "A classic Neapolitan-style pizza with a hand-stretched thin crust, rich tomato sauce, fresh mozzarella, and fragrant basil leaves.",
+      "difficulty": "Medium",
+      "prepTime": 30,
+      "cookTime": 15,
+      "servings": 2,
+      "category": "Dinner",
+      "tags": [
+        "Vegetarian",
+        "Classic"
+      ],
+      "nutrition": {
+        "calories": 560,
+        "protein": 18,
+        "carbs": 78,
+        "fat": 20
+      },
+      "ingredients": [
+        {
+          "name": "Pizza dough (store-bought or homemade)",
+          "amount": 250,
+          "unit": "g",
+          "quantity": "250 g"
+        },
+        {
+          "name": "Tomato passata or crushed tomatoes",
+          "amount": 0.75,
+          "unit": "cup",
+          "quantity": "0.75 cup"
+        },
+        {
+          "name": "Fresh mozzarella, sliced",
+          "amount": 150,
+          "unit": "g",
+          "quantity": "150 g"
+        },
+        {
+          "name": "Fresh basil leaves",
+          "amount": 10,
+          "unit": "pcs",
+          "quantity": "10 pcs"
+        },
+        {
+          "name": "Extra virgin olive oil",
+          "amount": 2,
+          "unit": "tbsp",
+          "quantity": "2 tbsp"
+        },
+        {
+          "name": "Garlic, minced",
+          "amount": 2,
+          "unit": "cloves",
+          "quantity": "2 cloves"
+        },
+        {
+          "name": "Salt and black pepper",
+          "amount": 1,
+          "unit": "pinch",
+          "quantity": "1 pinch"
+        },
+        {
+          "name": "Dried oregano",
+          "amount": 0.5,
+          "unit": "tsp",
+          "quantity": "0.5 tsp"
+        }
+      ],
+      "instructions": [
+        "Preheat your oven to its maximum temperature (250°C / 480°F) for at least 30 minutes with a pizza stone or baking tray inside.",
+        "Mix tomato passata with minced garlic, a pinch of salt, and dried oregano to make the sauce. Set aside.",
+        "On a lightly floured surface, stretch or roll the pizza dough into a 10-12 inch round, keeping the edges slightly thicker.",
+        "Transfer the dough to a piece of parchment paper. Spread the tomato sauce evenly leaving a 1-inch border for the crust.",
+        "Tear the fresh mozzarella and distribute it evenly over the sauce. Drizzle with 1 tbsp of olive oil.",
+        "Slide the pizza (on parchment) onto the hot baking stone. Bake for 10-13 minutes until the crust is golden and the cheese is bubbling and lightly browned.",
+        "Remove from oven, immediately scatter fresh basil leaves, drizzle remaining olive oil, slice into 6 pieces, and serve hot."
+      ],
+      "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=600&auto=format&fit=crop",
+      "id": "kuwqomu",
+      "rating": 0,
+      "reviews": [],
+      "isUserCreated": true
+    }
+  ],
+  "favorites": [
+    "2"
+  ],
+  "mealPlan": []
+}
