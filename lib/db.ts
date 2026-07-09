@@ -40,6 +40,7 @@ export interface Recipe {
   rating: number;
   reviews: Review[];
   isUserCreated: boolean;
+  userEmail?: string;
   cuisine?: string;
   imageKeywords?: string[];
   recommendations?: {
@@ -56,11 +57,12 @@ export interface MealPlanEntry {
   recipeId: string;
   recipeTitle: string;
   servings: number;
+  userEmail?: string;
 }
 
 interface DbData {
   recipes: Recipe[];
-  favorites: string[];
+  favorites: Record<string, string[]>;
   mealPlan: MealPlanEntry[];
 }
 
@@ -71,13 +73,24 @@ export function readDb(): DbData {
   try {
     if (!fs.existsSync(DB_PATH)) {
       // If db.json does not exist, return an empty layout
-      return { recipes: [], favorites: [], mealPlan: [] };
+      return { recipes: [], favorites: {}, mealPlan: [] };
     }
     const data = fs.readFileSync(DB_PATH, "utf8");
-    return JSON.parse(data);
+    const parsed = JSON.parse(data);
+    let favorites = parsed.favorites || {};
+    if (Array.isArray(favorites)) {
+      favorites = {
+        "anonymous": favorites
+      };
+    }
+    return {
+      recipes: parsed.recipes || [],
+      favorites: favorites,
+      mealPlan: parsed.mealPlan || []
+    };
   } catch (error) {
     console.error("Error reading mock database:", error);
-    return { recipes: [], favorites: [], mealPlan: [] };
+    return { recipes: [], favorites: {}, mealPlan: [] };
   }
 }
 
@@ -91,15 +104,22 @@ export function writeDb(data: DbData): void {
 }
 
 // Recipes operations
-export function getRecipes(): Recipe[] {
-  return readDb().recipes;
+export function getRecipes(userEmail?: string): Recipe[] {
+  const email = userEmail || "anonymous";
+  return readDb().recipes.filter(
+    (r) => !r.isUserCreated || r.userEmail === email || !r.userEmail
+  );
 }
 
 export function getRecipeById(id: string): Recipe | undefined {
   return readDb().recipes.find((r) => r.id === id);
 }
 
-export function createRecipe(recipe: Omit<Recipe, "id" | "rating" | "reviews" | "isUserCreated">): Recipe {
+export function createRecipe(
+  recipe: Omit<Recipe, "id" | "rating" | "reviews" | "isUserCreated" | "userEmail">,
+  userEmail?: string
+): Recipe {
+  const email = userEmail || "anonymous";
   const db = readDb();
   const newRecipe: Recipe = {
     ...recipe,
@@ -107,6 +127,7 @@ export function createRecipe(recipe: Omit<Recipe, "id" | "rating" | "reviews" | 
     rating: 0,
     reviews: [],
     isUserCreated: true,
+    userEmail: email,
   };
   db.recipes.push(newRecipe);
   writeDb(db);
@@ -127,25 +148,32 @@ export function deleteRecipe(id: string): boolean {
   const db = readDb();
   const lengthBefore = db.recipes.length;
   db.recipes = db.recipes.filter((r) => r.id !== id);
-  db.favorites = db.favorites.filter((favId) => favId !== id);
+  for (const email of Object.keys(db.favorites)) {
+    db.favorites[email] = db.favorites[email].filter((favId) => favId !== id);
+  }
   db.mealPlan = db.mealPlan.filter((mp) => mp.recipeId !== id);
   writeDb(db);
   return db.recipes.length < lengthBefore;
 }
 
 // Favorites operations
-export function getFavorites(): string[] {
-  return readDb().favorites;
+export function getFavorites(userEmail?: string): string[] {
+  const email = userEmail || "anonymous";
+  return readDb().favorites[email] || [];
 }
 
-export function toggleFavorite(recipeId: string): boolean {
+export function toggleFavorite(recipeId: string, userEmail?: string): boolean {
+  const email = userEmail || "anonymous";
   const db = readDb();
-  const isFav = db.favorites.includes(recipeId);
+  if (!db.favorites[email]) {
+    db.favorites[email] = [];
+  }
+  const isFav = db.favorites[email].includes(recipeId);
   
   if (isFav) {
-    db.favorites = db.favorites.filter((id) => id !== recipeId);
+    db.favorites[email] = db.favorites[email].filter((id) => id !== recipeId);
   } else {
-    db.favorites.push(recipeId);
+    db.favorites[email].push(recipeId);
   }
   
   writeDb(db);
@@ -153,15 +181,18 @@ export function toggleFavorite(recipeId: string): boolean {
 }
 
 // Meal Plan operations
-export function getMealPlan(): MealPlanEntry[] {
-  return readDb().mealPlan;
+export function getMealPlan(userEmail?: string): MealPlanEntry[] {
+  const email = userEmail || "anonymous";
+  return readDb().mealPlan.filter((e) => !e.userEmail || e.userEmail === email);
 }
 
-export function addMealPlanEntry(entry: Omit<MealPlanEntry, "id">): MealPlanEntry {
+export function addMealPlanEntry(entry: Omit<MealPlanEntry, "id" | "userEmail">, userEmail?: string): MealPlanEntry {
+  const email = userEmail || "anonymous";
   const db = readDb();
   const newEntry: MealPlanEntry = {
     ...entry,
     id: Math.random().toString(36).substring(2, 9),
+    userEmail: email,
   };
   db.mealPlan.push(newEntry);
   writeDb(db);

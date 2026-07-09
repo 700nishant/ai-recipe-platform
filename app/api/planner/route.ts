@@ -1,10 +1,12 @@
 import { NextResponse } from "next/server";
 import { getMealPlan, addMealPlanEntry, removeMealPlanEntry } from "@/lib/db";
+import { getUserEmail } from "@/lib/auth-helper";
 
 // GET: retrieves the current meal plan entries
-export async function GET() {
+export async function GET(request: Request) {
   try {
-    const planner = getMealPlan();
+    const userEmail = await getUserEmail(request);
+    const planner = getMealPlan(userEmail);
     return NextResponse.json(planner);
   } catch (error) {
     console.error("GET Planner Route Error:", error);
@@ -17,6 +19,7 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
     const { day, mealType, recipeId, recipeTitle, servings } = body;
+    const userEmail = await getUserEmail(request);
 
     if (!day || !mealType || !recipeId || !recipeTitle) {
       return NextResponse.json(
@@ -31,7 +34,7 @@ export async function POST(request: Request) {
       recipeId,
       recipeTitle,
       servings: Number(servings) || 2,
-    });
+    }, userEmail);
 
     return NextResponse.json(newEntry, { status: 201 });
   } catch (error) {

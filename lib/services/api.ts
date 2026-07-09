@@ -2,10 +2,22 @@ import { Recipe, MealPlanEntry, Review } from "@/lib/db";
 
 // Helper to make API calls
 async function fetcher<T>(url: string, options?: RequestInit): Promise<T> {
+  let userEmail = "";
+  if (typeof window !== "undefined") {
+    const mockUser = localStorage.getItem("mock_user");
+    if (mockUser) {
+      try {
+        const parsed = JSON.parse(mockUser);
+        userEmail = parsed?.email || "";
+      } catch (e) {}
+    }
+  }
+
   const res = await fetch(url, {
     ...options,
     headers: {
       "Content-Type": "application/json",
+      ...(userEmail ? { "x-user-email": userEmail } : {}),
       ...(options?.headers || {}),
     },
   });

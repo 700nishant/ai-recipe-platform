@@ -1,7 +1,7 @@
-import NextAuth from "next-auth";
+import NextAuth, { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 
-const handler = NextAuth({
+export const authOptions: NextAuthOptions = {
   providers: [
     CredentialsProvider({
       name: "Credentials",
@@ -13,9 +13,10 @@ const handler = NextAuth({
         // Standard credentials mock validation.
         // In a real application, we would check Neon Postgres or Strapi.
         if (credentials?.email && credentials?.password) {
+          const name = credentials.email.split("@")[0];
           return {
-            id: "user_1",
-            name: credentials.email.split("@")[0].charAt(0).toUpperCase() + credentials.email.split("@")[0].slice(1),
+            id: credentials.email,
+            name: name.charAt(0).toUpperCase() + name.slice(1),
             email: credentials.email,
             image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop"
           };
@@ -30,7 +31,9 @@ const handler = NextAuth({
   session: {
     strategy: "jwt",
   },
-  secret: process.env.NEXTAUTH_SECRET || "gourmet-secret-key-12345"
-});
+  secret: process.env.NEXTAUTH_SECRET || "gourmet_recipe_platform_secure_secret_key_2026_x"
+};
+
+const handler = NextAuth(authOptions);
 
 export { handler as GET, handler as POST };
