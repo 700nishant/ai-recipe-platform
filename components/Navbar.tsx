@@ -55,10 +55,10 @@ export const Navbar = () => {
   const isAuth = mounted && (status === "authenticated" || !!user);
 
   const handleLogout = () => {
+    localStorage.removeItem("mock_user");
     if (session) {
       signOut({ callbackUrl: "/" });
     } else {
-      localStorage.removeItem("mock_user");
       window.location.href = "/";
     }
   };

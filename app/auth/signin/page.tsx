@@ -59,6 +59,7 @@ export default function SignIn() {
         router.push("/dashboard");
         router.refresh();
       } else {
+        localStorage.removeItem("mock_user");
         toast({
           title: "Logged in successfully!",
           description: `Welcome back, ${email.split("@")[0]}!`,
