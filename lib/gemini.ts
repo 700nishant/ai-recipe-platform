@@ -1809,8 +1809,12 @@ export async function chefAssistantReply(
       systemInstruction: CHEF_SYSTEM_INSTRUCTION
     });
 
+    // Gemini chat sessions require the first message to be from 'user'
+    const firstUserIdx = history.findIndex(h => h.role === "user");
+    const cleanHistory = firstUserIdx !== -1 ? history.slice(firstUserIdx) : [];
+
     const chat = model.startChat({
-      history: history.map(h => ({
+      history: cleanHistory.map(h => ({
         role: h.role,
         parts: [{ text: h.parts[0].text }]
       }))
