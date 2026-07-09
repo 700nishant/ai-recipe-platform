@@ -1,23 +1,15 @@
 import { Recipe, MealPlanEntry, Review } from "@/lib/db";
-import { getSession } from "next-auth/react";
 
 // Helper to make API calls
 async function fetcher<T>(url: string, options?: RequestInit): Promise<T> {
   let userEmail = "";
   if (typeof window !== "undefined") {
-    try {
-      const session = await getSession();
-      if (session?.user?.email) {
-        userEmail = session.user.email;
-      } else {
-        const mockUser = localStorage.getItem("mock_user");
-        if (mockUser) {
-          const parsed = JSON.parse(mockUser);
-          userEmail = parsed?.email || "";
-        }
-      }
-    } catch (e) {
-      console.error("Error retrieving session in fetcher:", e);
+    const mockUser = localStorage.getItem("mock_user");
+    if (mockUser) {
+      try {
+        const parsed = JSON.parse(mockUser);
+        userEmail = parsed?.email || "";
+      } catch (e) {}
     }
   }
 
