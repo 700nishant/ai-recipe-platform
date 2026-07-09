@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GEMINI_MODEL } from "@/lib/gemini";
 
 export async function GET() {
   const apiKey = process.env.GEMINI_API_KEY || "";
@@ -24,8 +25,8 @@ export async function GET() {
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
     
-    // Attempt a direct simple query using gemini-1.5-flash
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    // Attempt a direct simple query using the configured model
+    const model = genAI.getGenerativeModel({ model: GEMINI_MODEL });
     const result = await model.generateContent("Respond with the word 'OK' if you can read this.");
     const text = result.response.text();
 
@@ -34,7 +35,7 @@ export async function GET() {
       maskedKey,
       keyType,
       testOutput: text.trim(),
-      message: "API key is active and successfully communicated with Gemini 1.5 Flash!"
+      message: `API key is active and successfully communicated with Gemini (${GEMINI_MODEL})!`
     });
   } catch (error: any) {
     console.error("Gemini Debug Endpoint Error:", error);

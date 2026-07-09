@@ -31,6 +31,8 @@ const apiKey = process.env.GEMINI_API_KEY || "";
 const hasKey = !!apiKey;
 const genAI = hasKey ? new GoogleGenerativeAI(apiKey) : null;
 
+export const GEMINI_MODEL = "gemini-2.5-flash";
+
 // System instructions for the chef chatbot
 const CHEF_SYSTEM_INSTRUCTION = `
 You are Chef Gourmet, a friendly, professional, and creative Michelin-starred chef assistant. 
@@ -1569,7 +1571,7 @@ export async function generateAIPickedRecipe(
   let lastError: string | null = null;
   let parsedRecipe: RawRecipe | null = null;
 
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+  const model = genAI.getGenerativeModel({ model: GEMINI_MODEL });
   const promptSubject = isPromptFlow 
     ? `Generate a detailed recipe for: "${recipePrompt}". Make it authentic and chef-level.`
     : `Generate a detailed recipe using these ingredients: ${ingredients.join(", ")}.`;
@@ -1755,7 +1757,7 @@ export async function detectIngredientsFromImage(base64Image: string): Promise<s
   }
 
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: GEMINI_MODEL });
     
     // Split headers (e.g. data:image/jpeg;base64,) if present
     const base64Data = base64Image.includes(",") ? base64Image.split(",")[1] : base64Image;
@@ -1803,7 +1805,7 @@ export async function chefAssistantReply(
 
   try {
     const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-flash",
+      model: GEMINI_MODEL,
       systemInstruction: CHEF_SYSTEM_INSTRUCTION
     });
 
@@ -1914,7 +1916,7 @@ export async function generateRecommendations(
   }
 
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: GEMINI_MODEL });
     const dbRecipes = getRecipes();
     const dbSummaries = dbRecipes.map(r => ({
       title: r.title,

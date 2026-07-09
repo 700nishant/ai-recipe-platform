@@ -792,6 +792,395 @@
       "rating": 0,
       "reviews": [],
       "isUserCreated": true
+    },
+    {
+      "title": "Chole Bhature",
+      "description": "Indian style Chole Bhature prepared in 105 minutes.",
+      "difficulty": "Medium",
+      "prepTime": 45,
+      "cookTime": 60,
+      "servings": 4,
+      "category": "Dinner",
+      "tags": [
+        "chole bhature",
+        "indian curry",
+        "fried bread"
+      ],
+      "nutrition": {
+        "calories": 780,
+        "protein": 28,
+        "carbs": 105,
+        "fat": 30
+      },
+      "ingredients": [
+        {
+          "name": "White Chickpeas (Kabuli Chana)",
+          "amount": 1.5,
+          "unit": "cups (soaked overnight)",
+          "quantity": "1.5 cups (soaked overnight)"
+        },
+        {
+          "name": "Tea Bags (for chole color)",
+          "amount": 2,
+          "unit": "small",
+          "quantity": "2 small"
+        },
+        {
+          "name": "Baking Soda (for boiling chickpeas)",
+          "amount": 1,
+          "unit": "/4 teaspoon",
+          "quantity": "1/4 teaspoon"
+        },
+        {
+          "name": "Salt (for chole)",
+          "amount": 1.5,
+          "unit": "teaspoons, or to taste",
+          "quantity": "1.5 teaspoons, or to taste"
+        },
+        {
+          "name": "Cooking Oil (for chole)",
+          "amount": 3,
+          "unit": "tablespoons",
+          "quantity": "3 tablespoons"
+        },
+        {
+          "name": "Cumin Seeds (Jeera)",
+          "amount": 1,
+          "unit": "teaspoon",
+          "quantity": "1 teaspoon"
+        },
+        {
+          "name": "Bay Leaf (Tej Patta)",
+          "amount": 1,
+          "unit": "",
+          "quantity": "1"
+        },
+        {
+          "name": "Green Cardamom (Hari Elaichi)",
+          "amount": 2,
+          "unit": "pods",
+          "quantity": "2 pods"
+        },
+        {
+          "name": "Black Cardamom (Badi Elaichi)",
+          "amount": 1,
+          "unit": "pod",
+          "quantity": "1 pod"
+        },
+        {
+          "name": "Cinnamon Stick (Dalchini)",
+          "amount": 1,
+          "unit": "-inch piece",
+          "quantity": "1-inch piece"
+        },
+        {
+          "name": "Cloves (Laung)",
+          "amount": 3,
+          "unit": "",
+          "quantity": "3"
+        },
+        {
+          "name": "Onion",
+          "amount": 1,
+          "unit": "large, finely chopped",
+          "quantity": "1 large, finely chopped"
+        },
+        {
+          "name": "Ginger-Garlic Paste",
+          "amount": 1.5,
+          "unit": "tablespoons",
+          "quantity": "1.5 tablespoons"
+        },
+        {
+          "name": "Green Chilies",
+          "amount": 2,
+          "unit": ", slit lengthwise",
+          "quantity": "2, slit lengthwise"
+        },
+        {
+          "name": "Tomato Puree",
+          "amount": 1,
+          "unit": "cup (from 2-3 medium tomatoes)",
+          "quantity": "1 cup (from 2-3 medium tomatoes)"
+        },
+        {
+          "name": "Coriander Powder (Dhaniya Powder)",
+          "amount": 1,
+          "unit": "tablespoon",
+          "quantity": "1 tablespoon"
+        },
+        {
+          "name": "Cumin Powder (Jeera Powder)",
+          "amount": 1,
+          "unit": "teaspoon",
+          "quantity": "1 teaspoon"
+        },
+        {
+          "name": "Turmeric Powder (Haldi Powder)",
+          "amount": 1,
+          "unit": "/2 teaspoon",
+          "quantity": "1/2 teaspoon"
+        },
+        {
+          "name": "Red Chili Powder (Lal Mirch Powder)",
+          "amount": 1,
+          "unit": "teaspoon, or to taste",
+          "quantity": "1 teaspoon, or to taste"
+        },
+        {
+          "name": "Chana Masala Powder",
+          "amount": 2,
+          "unit": "tablespoons",
+          "quantity": "2 tablespoons"
+        },
+        {
+          "name": "Dry Mango Powder (Amchur)",
+          "amount": 1,
+          "unit": "teaspoon",
+          "quantity": "1 teaspoon"
+        },
+        {
+          "name": "Dried Fenugreek Leaves (Kasuri Methi)",
+          "amount": 1,
+          "unit": "teaspoon, crushed",
+          "quantity": "1 teaspoon, crushed"
+        },
+        {
+          "name": "Fresh Coriander Leaves",
+          "amount": 2,
+          "unit": "tablespoons, chopped (for garnish)",
+          "quantity": "2 tablespoons, chopped (for garnish)"
+        },
+        {
+          "name": "All-Purpose Flour (Maida)",
+          "amount": 2,
+          "unit": "cups",
+          "quantity": "2 cups"
+        },
+        {
+          "name": "Semolina (Sooji/Rava)",
+          "amount": 1,
+          "unit": "/4 cup",
+          "quantity": "1/4 cup"
+        },
+        {
+          "name": "Yogurt (Dahi)",
+          "amount": 1,
+          "unit": "/2 cup, plain and unsweetened",
+          "quantity": "1/2 cup, plain and unsweetened"
+        },
+        {
+          "name": "Sugar",
+          "amount": 1,
+          "unit": "teaspoon",
+          "quantity": "1 teaspoon"
+        },
+        {
+          "name": "Salt (for bhature)",
+          "amount": 1,
+          "unit": "/2 teaspoon",
+          "quantity": "1/2 teaspoon"
+        },
+        {
+          "name": "Baking Powder",
+          "amount": 1,
+          "unit": "teaspoon",
+          "quantity": "1 teaspoon"
+        },
+        {
+          "name": "Water (for bhature dough)",
+          "amount": 1,
+          "unit": "as needed (approx. 1/4 - 1/2 cup)",
+          "quantity": "as needed (approx. 1/4 - 1/2 cup)"
+        },
+        {
+          "name": "Cooking Oil (for kneading bhature dough)",
+          "amount": 2,
+          "unit": "tablespoons",
+          "quantity": "2 tablespoons"
+        },
+        {
+          "name": "Cooking Oil (for deep frying bhature)",
+          "amount": 4,
+          "unit": "cups, or as needed",
+          "quantity": "4 cups, or as needed"
+        }
+      ],
+      "instructions": [
+        "**For Chole (Chickpea Curry):**",
+        "1. Wash and soak white chickpeas (Kabuli Chana) in plenty of water overnight, or for at least 8-10 hours. Drain and rinse the soaked chickpeas.",
+        "2. In a pressure cooker, combine the soaked chickpeas, 4 cups of fresh water, 2 tea bags, 1/4 teaspoon baking soda, and 1 teaspoon of salt. Pressure cook for 5-6 whistles on medium-high heat, then reduce heat and cook for another 10-15 minutes until the chickpeas are very tender. Let the pressure release naturally. Remove the tea bags and set aside the boiled chickpeas with their cooking liquid.",
+        "3. Heat 3 tablespoons of cooking oil in a large heavy-bottomed pan or kadai over medium heat. Add cumin seeds, bay leaf, green cardamom, black cardamom, cinnamon stick, and cloves. Sauté for 30 seconds until fragrant.",
+        "4. Add the finely chopped onion and sauté until golden brown (about 8-10 minutes).",
+        "5. Add ginger-garlic paste and slit green chilies. Sauté for 1-2 minutes until the raw smell disappears.",
+        "6. Pour in the tomato puree. Cook, stirring occasionally, until the oil starts to separate from the masala (about 8-10 minutes).",
+        "7. Add coriander powder, cumin powder, turmeric powder, and red chili powder. Mix well and cook for 1-2 minutes, adding a splash of water if the masala sticks to the bottom.",
+        "8. Stir in the chana masala powder, dry mango powder (amchur), and the remaining 1/2 teaspoon of salt. Mix thoroughly.",
+        "9. Add the boiled chickpeas along with their cooking liquid to the pan. Gently mash a few chickpeas with the back of your ladle to thicken the gravy. Bring the mixture to a boil, then reduce heat to low and simmer, covered, for 15-20 minutes, allowing the flavors to meld.",
+        "10. Crush the dried fenugreek leaves (Kasuri Methi) between your palms and add to the chole. Stir well. Taste and adjust salt or spices if needed.",
+        "11. Garnish with fresh chopped coriander leaves before serving.",
+        "**For Bhature (Fried Bread):**",
+        "1. In a large mixing bowl, combine all-purpose flour, semolina, sugar, 1/2 teaspoon salt, and baking powder. Mix well.",
+        "2. Add yogurt to the dry ingredients and mix. Gradually add water, a little at a time, and knead to form a soft, smooth, and elastic dough. The dough should be slightly sticky initially, but continue kneading for 8-10 minutes until it becomes smooth. You might not need all the water.",
+        "3. Add 2 tablespoons of cooking oil to the dough and knead for another 2-3 minutes until the oil is fully incorporated and the dough is very soft and pliable.",
+        "4. Cover the dough with a damp cloth or plastic wrap and let it rest in a warm place for at least 2-3 hours (or even longer, up to 4-5 hours for better fermentation and fluffiness).",
+        "5. After resting, gently punch down the dough and knead for another minute. Divide the dough into 8-10 equal portions and roll them into smooth balls.",
+        "6. Heat 4 cups of cooking oil for deep frying in a deep kadai or heavy-bottomed pan over medium-high heat. The oil should be hot but not smoking (test by dropping a small piece of dough; it should sizzle and rise quickly).",
+        "7. Lightly grease your rolling surface and rolling pin with a little oil. Take one dough ball and gently roll it into an oval or round shape, about 6-7 inches in diameter and slightly thicker than a roti. Do not use dry flour for dusting, as it can burn the oil.",
+        "8. Carefully slide the rolled bhatura into the hot oil. Using a slotted spoon or ladle, gently press down on the center of the bhatura. This helps it puff up. As it puffs, flip it over and fry the other side until golden brown and evenly cooked. Each bhatura should take about 30-60 seconds per side.",
+        "9. Remove the fried bhatura from the oil and place it on absorbent paper towels to drain excess oil. Repeat with the remaining dough balls.",
+        "10. Serve hot Chole with freshly fried Bhature immediately, accompanied by sliced onions, green chilies, and a wedge of lemon."
+      ],
+      "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?q=80&w=600&auto=format&fit=crop",
+      "id": "9158wxy",
+      "rating": 0,
+      "reviews": [],
+      "isUserCreated": true
+    },
+    {
+      "title": "Classic Rich Chocolate Cake with Chocolate Buttercream",
+      "description": "American style Classic Rich Chocolate Cake with Chocolate Buttercream prepared in 75 minutes.",
+      "difficulty": "Medium",
+      "prepTime": 40,
+      "cookTime": 35,
+      "servings": 12,
+      "category": "Dessert",
+      "tags": [
+        "chocolate cake",
+        "dessert",
+        "baking",
+        "rich chocolate"
+      ],
+      "nutrition": {
+        "calories": 480,
+        "protein": 5,
+        "carbs": 68,
+        "fat": 23
+      },
+      "ingredients": [
+        {
+          "name": "All-purpose flour",
+          "amount": 300,
+          "unit": "g",
+          "quantity": "300g"
+        },
+        {
+          "name": "Granulated sugar",
+          "amount": 400,
+          "unit": "g",
+          "quantity": "400g"
+        },
+        {
+          "name": "Unsweetened cocoa powder",
+          "amount": 75,
+          "unit": "g",
+          "quantity": "75g"
+        },
+        {
+          "name": "Baking soda",
+          "amount": 2,
+          "unit": "tsp",
+          "quantity": "2 tsp"
+        },
+        {
+          "name": "Baking powder",
+          "amount": 1,
+          "unit": "tsp",
+          "quantity": "1 tsp"
+        },
+        {
+          "name": "Salt",
+          "amount": 1,
+          "unit": "tsp",
+          "quantity": "1 tsp"
+        },
+        {
+          "name": "Large eggs",
+          "amount": 2,
+          "unit": "",
+          "quantity": "2"
+        },
+        {
+          "name": "Buttermilk",
+          "amount": 240,
+          "unit": "ml",
+          "quantity": "240ml"
+        },
+        {
+          "name": "Vegetable oil",
+          "amount": 120,
+          "unit": "ml",
+          "quantity": "120ml"
+        },
+        {
+          "name": "Vanilla extract",
+          "amount": 2,
+          "unit": "tsp",
+          "quantity": "2 tsp"
+        },
+        {
+          "name": "Hot strong brewed coffee (or boiling water)",
+          "amount": 240,
+          "unit": "ml",
+          "quantity": "240ml"
+        },
+        {
+          "name": "Unsalted butter, softened",
+          "amount": 225,
+          "unit": "g",
+          "quantity": "225g"
+        },
+        {
+          "name": "Powdered sugar",
+          "amount": 450,
+          "unit": "g",
+          "quantity": "450g"
+        },
+        {
+          "name": "Unsweetened cocoa powder",
+          "amount": 50,
+          "unit": "g",
+          "quantity": "50g"
+        },
+        {
+          "name": "Whole milk (or heavy cream)",
+          "amount": 60,
+          "unit": "ml",
+          "quantity": "60ml"
+        },
+        {
+          "name": "Vanilla extract",
+          "amount": 1,
+          "unit": "tsp",
+          "quantity": "1 tsp"
+        },
+        {
+          "name": "Pinch of salt",
+          "amount": 1,
+          "unit": "/4 tsp",
+          "quantity": "1/4 tsp"
+        }
+      ],
+      "instructions": [
+        "Preheat your oven to 175°C (350°F). Grease and flour two 9-inch round cake pans, or line with parchment paper circles at the bottom.",
+        "In a large bowl, sift together the all-purpose flour, granulated sugar, 75g unsweetened cocoa powder, baking soda, baking powder, and 1 tsp salt. Whisk until well combined.",
+        "In a separate medium bowl, whisk together the large eggs, buttermilk, vegetable oil, and 2 tsp vanilla extract until smooth.",
+        "Pour the wet ingredients into the dry ingredients. Mix on low speed with an electric mixer, or by hand, until just combined. Do not overmix.",
+        "Carefully add the hot strong brewed coffee (or boiling water) to the batter. The batter will be thin, this is normal. Stir until fully incorporated.",
+        "Divide the batter evenly between the prepared cake pans. Bake for 30-35 minutes, or until a wooden skewer inserted into the center comes out clean. Be careful not to overbake.",
+        "Let the cakes cool in the pans for 10-15 minutes before inverting them onto a wire rack to cool completely. Ensure cakes are completely cool before frosting.",
+        "While the cakes cool, prepare the chocolate buttercream: In a large bowl, using an electric mixer, beat the softened unsalted butter on medium speed until creamy (about 2-3 minutes).",
+        "Gradually add the powdered sugar, about a cup at a time, beating until smooth after each addition. The mixture will be thick.",
+        "Add 50g unsweetened cocoa powder, 60ml whole milk (or heavy cream), 1 tsp vanilla extract, and the pinch of salt. Beat on low speed until combined, then increase to medium-high and beat until light, fluffy, and smooth (about 3-5 minutes). If frosting is too thick, add more milk, 1 tablespoon at a time.",
+        "Once the cakes are completely cool, place one layer on a serving plate or cake stand. Spread about one-third of the buttercream evenly over the top.",
+        "Carefully place the second cake layer on top. Use the remaining buttercream to frost the top and sides of the entire cake, smoothing it with an offset spatula or knife.",
+        "Optionally, decorate with chocolate shavings or sprinkles. Slice and serve at room temperature."
+      ],
+      "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=600&auto=format&fit=crop",
+      "id": "0t41h1a",
+      "rating": 0,
+      "reviews": [],
+      "isUserCreated": true
     }
   ],
   "favorites": [
